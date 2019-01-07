@@ -1,0 +1,59 @@
+body, div, h1, h2, ul {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* 变量区 */
+
+@top-nav-height: 40px;
+@left-menu-width: 180px;
+@layout-border-color: #eee;
+
+/* 布局样式 */
+
+.layout-container {
+  height: 100%;
+  .top-nav {
+    height: @top-nav-height;
+    line-height: @top-nav-height;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid @layout-border-color;
+    background: #fff;
+  }
+  .left-menu {
+    width: @left-menu-width;
+    border-right: 1px solid @layout-border-color;
+    position: fixed;
+    top: @top-nav-height;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0;
+    li {
+      line-height: 30px;
+      list-style: none;
+      a {
+        text-decoration: none;
+        display: block;
+        padding-left: 30px;
+        border-bottom: 1px solid @layout-border-color;
+        box-sizing: border-box;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+  .right-panel {
+    margin-left: @left-menu-width;
+    padding: 15px;
+    padding-top: 55px;
+  }
+}

@@ -12,6 +12,10 @@ module.exports = webpackMerge({
       {
         test: /\.css$/,
         use: ['css-hot-loader', MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
+        test: /\.less$/,
+        use: ['css-hot-loader', MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
       }
     ]
   },
