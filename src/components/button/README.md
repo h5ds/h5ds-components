@@ -1,5 +1,4 @@
 ## Props
 
-| Name | Type | Default | Required | Description |
+| 参数 | 说明 | 类型 | 必须参数 | 默认值 |
 | ---- | ---- | ------- | -------- | ----------- |
-
