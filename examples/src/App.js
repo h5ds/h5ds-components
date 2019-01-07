@@ -4,25 +4,27 @@ import { Link } from 'react-router-dom';
 import { history } from './common';
 import { routes } from './rotues';
 import { demoMenus } from './demo-menus';
+import './css/layout.css';
 
 export class App extends Component {
   render() {
     return (
       <Router history={history}>
-        <Fragment>
-          <div className="left-menu">
-            <ul>
-              {demoMenus.map(m => {
-                return (
-                  <li key={m.name}>
-                    <Link to={m.path} replace={true}>
-                      {m.text}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+        <div className="layout-container">
+          <div className="top-nav">
+            <h2>H5DS-COMPONENTS DEMO</h2>
           </div>
+          <ul className="left-menu">
+            {demoMenus.map(m => {
+              return (
+                <li key={m.name}>
+                  <Link to={m.path} replace={true} title={m.text}>
+                    {m.text}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
           <div className="right-panel">
             <Switch>
               {routes.map(r => {
@@ -30,7 +32,7 @@ export class App extends Component {
               })}
             </Switch>
           </div>
-        </Fragment>
+        </div>
       </Router>
     );
   }

@@ -4,7 +4,6 @@ export class ButtonDemo extends Component {
   render() {
     return (
       <div>
-        Hell
         <Button>SSSSSSSSSSS</Button>
       </div>
     );

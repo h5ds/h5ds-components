@@ -8,11 +8,17 @@ module.exports = webpackMerge({
   stats: 'minimal',
   module: {
     rules: [
-      { test: /.jsx?/, use: ['babel-loader'], exclude: [/build/] },
+      { test: /\.jsx?$/, use: ['babel-loader'], exclude: [/build/] },
       {
-        test: /css/,
+        test: /\.css$/,
         use: ['css-hot-loader', MiniCssExtractPlugin.loader, 'css-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css'
+    })
+  ]
 });
