@@ -1,0 +1,51 @@
+{
+  "name": "h5ds-components",
+  "version": "0.0.1",
+  "description": "The react components for h5ds.",
+  "main": "./dist/h5ds-components.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js --hot",
+    "lib": "webpack --config build/webpack.lib.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h5ds/h5ds-components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h5ds/h5ds-components/issues"
+  },
+  "homepage": "https://github.com/h5ds/h5ds-components#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-hot-loader": "^1.4.3",
+    "css-loader": "^2.1.0",
+    "history": "^4.7.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
