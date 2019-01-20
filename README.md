@@ -10,7 +10,7 @@ The react components for h5ds.
 - [ ] Popover
 - [ ] InputNumber
 - [ ] Slider
-- [ ] Icon
+- [x] Icon [src/components/icon](src/components/icon)
 - [ ] Popconfirm
 - [ ] Input
 - [ ] Upload
@@ -32,8 +32,8 @@ git clone https://github.com/h5ds/h5ds-components.git
 npm i
 
 # run dev
-npm run start 
-# or 
+npm run start
+# or
 npm start
 
 # build lib
