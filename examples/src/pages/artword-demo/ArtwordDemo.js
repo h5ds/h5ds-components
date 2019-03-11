@@ -16,7 +16,7 @@ export class ArtwordDemo extends Component {
       { type: 'qieGe', name: '切割', colors: ['#9075ff', '#e227b1'] },
       { type: 'fire', name: '火焰', colors: ['#F00'] },
       { type: 'snow', name: '冰雪', colors: ['#9dffff', '#98e7ff'] },
-      { type: 'louKong', name: '镂空', colors: ['#ff7c7c', '#000'] },
+      { type: 'louKong', name: '镂空', colors: ['#ff7c7c', '#de0000'] },
     ];
     return (
       <div>
