@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Router, Switch, Route } from 'react-router';
 import { Link } from 'react-router-dom';
 import { history } from './common';
-import { routes, routesMenus } from './rotues';
-import './css/layout.less';
+import { routes } from './rotues';
+import './less/layout.less';
 
 export class App extends Component {
   render() {
@@ -14,7 +14,7 @@ export class App extends Component {
             <h2>H5DS-COMPONENTS DEMO</h2>
           </div>
           <ul className="left-menu">
-            {routesMenus.map(m => {
+            {routes.map(m => {
               return (
                 <li key={m.name}>
                   <Link to={m.path} replace={true} title={m.text}>

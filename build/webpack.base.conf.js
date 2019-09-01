@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = webpackMerge({
   target: 'web',
   mode: 'production',
-  stats: 'minimal',
+  stats: 'errors-only',
   module: {
     rules: [
       { test: /\.jsx?$/, use: ['babel-loader'], exclude: [/build/] },
